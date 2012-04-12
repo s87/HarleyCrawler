@@ -1,0 +1,10 @@
+Crawler-Modules based on simpletest from http://www.simpletest.org
+
+Setup
+
+Edit crawler.php and setup the store module.
+
+Cronjob
+
+*/10 * * * * /usr/bin/php5 -f /path/to/HarleyCrawler/crawler/crawler.php >>/var/log/HarleyCrawler/cronlog.log
+

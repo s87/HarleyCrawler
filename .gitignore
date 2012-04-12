@@ -1,0 +1,4 @@
+*.log
+*.private
+crawler/testpages/*.html
+crawler/seen.txt
