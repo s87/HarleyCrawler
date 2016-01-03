@@ -20,8 +20,8 @@ class Crawler_Harley_Motoscout24
 //http://ww4.autoscout24.de/?atype=B&make=50040&mmvmk0=50040&mmvco=1&fregto=1993&cy=D&powerscale=KW&zipc=D&ustate=N,U&sort=age&desc=1&results=20&page=1&event=sort&dtr=s
 
 		$url = 'http://ww4.autoscout24.de/?atype=B&make=50040&mmvmk0=50040&mmvco=1&fregto=1993&cy=D&powerscale=KW&zipc=D&ustate=N,U&sort=age&desc=1&results=20&page=1&event=sort&dtr=s';
-		//$page = $browser->get($url);
-		$page = $this->getTestPage();
+		$page = $browser->get($url);
+		//$page = $this->getTestPage();
 		if( !preg_match('/Suchergebnis/', $page) )
 		{
 				echo "Fehler bei ".get_class($this)."\n";
